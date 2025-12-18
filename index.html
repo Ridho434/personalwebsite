@@ -378,14 +378,13 @@
             }
         }
 
-        /* Mobile */
-        @media (max-width: 768px) {
+        /* Small Mobile */
+        @media (max-width: 480px) {
             body {
                 padding: 0 15px;
                 margin: 0;
             }
-            
-            /* Navbar */
+
             .navbar {
                 flex-direction: column;
                 align-items: center;
@@ -411,14 +410,18 @@
                 text-align: center;
                 padding: 12px;
                 font-size: 16px;
-                border-bottom: 1px solid #eee;
+                /* border-bottom: 1px solid #eee; */
             }
             
             ul li:last-child a {
                 border-bottom: none;
             }
 
-            /* Hero Section */
+            .spesial h1 a {
+                font-size: 28px;
+            }
+
+             /* Hero Section */
             .container {
                 flex-direction: column;
                 text-align: center;
@@ -516,99 +519,6 @@
             
             .thank-to-gpt {
                 font-size: 12px;
-            }
-        }
-
-        /* Small Mobile */
-        @media (max-width: 480px) {
-            body {
-                padding: 0 15px;
-                margin: 0;
-            }
-
-            .container, .kontainer {
-                padding: 20px 15px;
-            }
-            
-            .namasaya, .siapaaku {
-                font-size: 20px;
-            }
-            
-            .quote {
-                font-size: 18px;
-            }
-            
-            .author, .kenalin {
-                font-size: 14px;
-            }
-            
-            .btn-about, .btn-about-whoami {
-                padding: 10px 20px;
-                font-size: 1rem;
-            }
-            
-            .spesial h1 a {
-                font-size: 22px;
-            }
-            
-            ul li a {
-                font-size: 14px;
-                padding: 10px;
-            }
-            
-            .unrealimage, .blenderimage, .unityimage {
-                width: 80px;
-            }
-            
-            .gambarhati {
-                width: 100px;
-            }
-            
-            .title {
-                font-size: 14px;
-            }
-            
-            .paragraph {
-                font-size: 12px;
-            }
-        }
-
-        /* Very Small Mobile */
-        @media (max-width: 360px) {
-            body {
-                padding: 0 15px;
-                margin: 0;
-            }
-            
-            .container, .kontainer {
-                padding: 15px 10px;
-            }
-            
-            .namasaya, .siapaaku {
-                font-size: 18px;
-            }
-            
-            .quote {
-                font-size: 16px;
-            }
-            
-            .author, .kenalin {
-                font-size: 13px;
-            }
-            
-            .spesial h1 a {
-                font-size: 20px;
-            }
-            
-            .unrealimage, .blenderimage, .unityimage {
-                width: 70px;
-            }
-
-            .akubelajarini{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 5px;
             }
         }
     </style>

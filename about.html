@@ -145,13 +145,12 @@
         /* ========================
            RESPONSIVE DESIGN
         ======================== */
-        
-        /* Tablet */
         @media (max-width: 1024px) {
-            .navbar {
-                padding: 15px 0;
+            body{
+                padding: 0 15px;
+                margin: 15px;
             }
-            
+
             .spesial h1 a {
                 font-size: 28px;
             }
@@ -160,43 +159,14 @@
                 font-size: 18px;
                 padding: 10px 15px;
             }
-            
-            .about-me {
-                font-size: 26px;
-                margin-top: 30px;
-            }
-            
-            .tell-name {
-                font-size: 22px;
-            }
-            
-            .age-love, .learn-a-lot {
-                font-size: 18px;
-            }
-            
-            .blender {
-                width: 180px;
-            }
-            
-            .unity {
-                width: 190px;
-            }
-            
-            .git {
-                width: 130px;
-            }
-            
-            .vscode {
-                width: 100px;
-            }
-            
-            .unreal {
-                width: 80px;
-            }
         }
 
-        /* Mobile */
-        @media (max-width: 768px) {
+        @media (max-width: 480px) {
+            body {
+                padding: 0 15px;
+                margin: 0;
+            }
+
             .navbar {
                 flex-direction: column;
                 align-items: center;
@@ -222,224 +192,43 @@
                 text-align: center;
                 padding: 12px;
                 font-size: 16px;
-                border-bottom: 1px solid #eee;
             }
             
             ul li:last-child a {
                 border-bottom: none;
             }
-            
-            .main-content {
-                padding: 0 15px;
-            }
-            
-            .about-me {
-                font-size: 22px;
-                margin-top: 30px;
-                padding: 10px;
-                text-align: center;
-            }
-            
-            .tell-name {
-                font-size: 18px;
-                padding: 10px;
-                text-align: center;
-            }
-            
-            .age-love, .learn-a-lot {
-                font-size: 16px;
-                padding: 10px;
-                text-align: center;
-                line-height: 1.5;
-            }
-            
-            .my-tools {
-                gap: 20px;
-                margin-top: 20px;
-            }
-            
-            .blender {
-                width: 150px;
-            }
-            
-            .unity {
-                width: 160px;
-            }
-            
-            .git {
-                width: 110px;
-            }
-            
-            .vscode {
-                width: 90px;
-            }
-            
-            .unreal {
-                width: 70px;
-            }
-            
-            .note-havent-use {
-                font-size: 13px;
-                margin-top: 5px;
-            }
-        }
 
-        /* Small Mobile */
-        @media (max-width: 480px) {
             .spesial h1 a {
-                font-size: 20px;
+                font-size: 28px;
             }
-            
-            ul li a {
-                font-size: 14px;
-                padding: 10px;
-            }
-            
-            .about-me {
-                font-size: 20px;
-                margin-top: 20px;
-            }
-            
-            .tell-name {
-                font-size: 16px;
-            }
-            
-            .age-love, .learn-a-lot {
-                font-size: 14px;
-                line-height: 1.4;
-            }
-            
-            .my-tools {
-                gap: 15px;
-            }
-            
-            .blender {
-                width: 120px;
-            }
-            
-            .unity {
-                width: 130px;
-            }
-            
-            .git {
-                width: 90px;
-            }
-            
-            .vscode {
-                width: 75px;
-            }
-            
-            .unreal {
-                width: 60px;
-            }
-            
-            .note-havent-use {
-                font-size: 12px;
-            }
-            
-            .kakikaki {
-                font-size: 12px;
-            }
-        }
 
-        /* Very Small Mobile */
-        @media (max-width: 360px) {
-            .spesial h1 a {
+            .about-me{
+                font-size: 24px;
+            }
+
+            .tell-name{
                 font-size: 18px;
+                line-height: 25px;
             }
-            
-            .about-me {
+
+            .age-love{
                 font-size: 18px;
+                line-height: 25px;
             }
-            
-            .tell-name {
-                font-size: 14px;
-            }
-            
-            .age-love, .learn-a-lot {
-                font-size: 13px;
-            }
-            
-            .my-tools {
-                gap: 12px;
-            }
-            
-            .blender {
-                width: 100px;
-            }
-            
-            .unity {
-                width: 110px;
-            }
-            
-            .git {
-                width: 75px;
-            }
-            
-            .vscode {
-                width: 65px;
-            }
-            
-            .unreal {
-                width: 50px;
-            }
-        }
 
-        /* Extra adjustment for very tall mobile screens */
-        @media (max-height: 600px) and (orientation: portrait) {
-            .navbar {
-                padding: 10px 0;
+            .learn-a-lot{
+                font-size: 18px;
+                line-height: 25px;
             }
-            
-            .about-me {
-                margin-top: 20px;
-            }
-            
-            footer {
-                margin-top: 30px;
-            }
-        }
 
-        /* Landscape orientation for mobile */
-        @media (max-width: 768px) and (orientation: landscape) {
-            .navbar {
-                flex-direction: row;
-                padding: 10px 0;
+            .about-me{
+                font-size: 24px;
             }
-            
-            ul {
-                flex-direction: row;
-                gap: 10px;
-            }
-            
-            ul li a {
-                padding: 8px 12px;
-                font-size: 14px;
-                border-bottom: none;
-            }
-            
-            .my-tools {
-                gap: 15px;
-            }
-            
-            .blender {
-                width: 120px;
-            }
-            
-            .unity {
-                width: 130px;
-            }
-            
-            .git {
-                width: 90px;
-            }
-            
-            .vscode {
-                width: 75px;
-            }
-            
-            .unreal {
-                width: 60px;
+
+            .my-tools{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
             }
         }
     </style>
