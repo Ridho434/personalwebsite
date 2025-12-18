@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ridho's</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        @keyframes myanimasion {
+           0%{transform: rotate(0deg);} 
+           100%{transform: rotate(360deg);}
+        }
+
+
+        @keyframes besarkecil {
+           0%{transform: scale(1);} 
+           50%{transform: scale(1.05);}
+           100%{transform: scale(1);} 
+        }
+
+        @keyframes cenatcenut {
+           0%{transform: scale(1);} 
+           50%{transform: scale(1.2);}
+           100%{transform: scale(1);} 
+        }
+
+        ::selection {
+            background-color: rgb(47, 193, 255);
+            color: rgb(38, 38, 38);
+        }
+
+
+        body {
+            font-family: "Press Start 2P", Space Mono, monospace;
+            margin-left: 150px;
+            margin-right: 150px;
+            background-color: white
+        }
+
+        .title {
+            color: rgb(38, 38, 38);
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 18px;
+        }
+
+        .paragraph {
+            display: flex;
+            font-size: 16px;
+            font-family: space mono, monospace;
+            letter-spacing: 2px;
+            color: rgb(38, 38, 38);
+        }
+
+        .judulnya {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            padding: 30px 10px;
+            background-color: white;
+            border-radius: 12px;
+        }
+
+
+
+        #gambar {
+            width: 300px;
+            height: auto;
+            margin: auto;
+            display: block;
+            animation: myanimasion 1s linear infinite;            
+        }   
+
+
+        .animasigambar {
+            margin-top: 120px;
+            margin-bottom: 120px;
+        }
+
+        .ignoretext {
+            text-align: center;
+            font-size: 14px;
+            color: rgb(38, 38, 38);
+            margin-top: 120px;
+            margin-bottom: 120px;
+        }
+
+        .kakikaki {
+            font-size: 16px;    
+        }
+
+        .speedrunwaktu {
+            display: flex;
+            justify-self: center;
+            align-self: center;
+            /* margin-top: 50px; */
+            font-size: 18px;
+            font-weight: bold;
+            /* background-color: pink; */
+            width: auto;
+            height: auto;
+            border-radius: 12px;
+            padding: 12px;
+        }
+
+        /* .speedrunwaktu:hover{
+            background-color: rgb(255, 164, 180);
+            cursor: pointer;
+            
+        } */
+
+        .speedrunwaktu2 {
+            display: flex;
+            justify-self: center;
+            align-self: center;
+            margin-top: 2px;
+            font-size: 16px;
+            /* background-color: pink; */
+            width: auto;
+            height: auto;
+            border-radius: 12px;
+            padding: 12px;
+        }
+
+        /* .speedrunwaktu2:hover{
+            background-color: rgb(255, 164, 180);
+            cursor: pointer;
+            
+        } */
+
+        .perkenalan {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 120px;
+        }
+
+        .judulBesar {
+            display: flex;
+            justify-self: center;
+            align-self: center;
+            /* background-color: pink; */
+            height: auto;
+            width: fit-content;
+            padding: 6px;
+            /* border-radius: 16px; */
+            /* animation: besarkecil 1s linear infinite; */
+        }
+
+        footer {
+            margin-top: 50px;
+            
+            width: auto;
+            height: auto;
+            padding: 1px;
+            align-content: center;
+            border-radius: 12px;
+            
+        }
+
+
+        .hati {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 70px;
+            margin-bottom: 50px;
+        }
+
+        .gambarhati {
+            width: 150px;
+            height: auto;
+            animation: cenatcenut .8s linear infinite;
+        }
+
+        .gambarhati:hover {
+            animation: cenatcenut .4s linear infinite;
+            cursor: pointer;
+        }
+
+        .Mengapa {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 120px;
+            font-size: 18px;
+            color: rgb(38, 38, 38);
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            /* background-color: white; */
+        }
+
+    
+        ul li a {
+            display: block;
+            color: rgb(38, 38, 38);
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+            font-family: monospace;
+            font-size: 20px;
+        }
+
+        ul li a:hover {
+            color: rgb(47, 193, 255);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            width: auto;
+        }
+
+        .spesial h1 a {
+            font-family: 'press start 2p';
+            font-size: 35px;
+            color: rgb(38, 38, 38);
+            margin: 0;
+            padding: 14px;
+            text-decoration: none;
+        }
+
+        .unrealimage {
+            width: 150px;
+            height: auto;
+            margin: 20px;
+        }
+
+        .blenderimage {
+            width: 150px;
+            height: auto;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .unityimage {
+            width: 150px;
+            height: auto;
+            margin: 20px;
+        }
+
+        .akubelajarini {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 70px;
+            margin-bottom: 50px;
+        }   
+
+        .gwebelajarini {
+            text-align: center;
+            font-size: 18px;
+            color: rgb(38, 38, 38);
+            /* margin-bottom: 150px; */
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: auto;
+            padding: 30px 50px;
+            background-color: black;
+            border-radius: 12px;
+        }
+
+        .container-left {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .namasaya {
+            font-size: 28px;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .quote {
+            font-size: 24px;
+            margin-bottom: 5px;
+            line-height: 1.2;
+            color: white;
+        }
+
+        .author {
+            font-size: 18px;
+            text-align: right;
+            margin-bottom: 60px;
+            color: white;
+        }
+
+        .btn-about {
+            background-color: transparent;
+            color: white;
+            font-family: 'VT323', monospace;
+            font-size: 1.5rem;
+            padding: 10px 30px;
+            border: 2px solid rgb(47, 193, 255); /* Warna border biru */
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn-about:hover {
+            background-color: rgb(47, 193, 255);
+            color: white;
+        }
+
+        .content-right {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .profile-img {
+            max-width: 100%;
+            height: auto;
+            max-height: 500px;
+            /* Filter ini opsional, untuk memastikan warnanya vivid */
+            filter: contrast(1.1); 
+        }
+
+
+
+
+        .kontainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: fixed;
+            width: auto;
+            padding: 30px 50px;
+            background-color: black;
+            border-radius: 12px;
+        }
+
+        .containerkiri {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .siapaaku {
+            font-size: 28px;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .kenalin {
+            font-size: 28px;
+            font-family: space mono, monospace;
+            margin-bottom: 5px;
+            line-height: 1.2;
+            color: white;
+        }
+
+        .author {
+            font-size: 18px;
+            text-align: right;
+            margin-bottom: 60px;
+            color: white;
+        }
+
+        .kontainerkanan {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .profile-img {
+            max-width: 100%;
+            height: auto;
+            max-height: 500px;
+            /* Filter ini opsional, untuk memastikan warnanya vivid */
+            filter: contrast(1.1); 
+        }
+
+        
+
+
+
+
+</style>
+
+<div class="navbar">
+<div class="spesial">
+    <h1><a href="index.html">MyWebsite</a></h1>
+</div>
+
+<div class="menu">
+<ul>
+    <li><a href="about.html">About Me</a></li>
+    <li><a href="contact.html">Contact Me</a></li>
+</ul>
+</div>
+</div>
+
+    <div class="container">
+        <div class="containerleft">
+            <h2 class="namasaya">Ridho Poetra</h2>
+
+            <div class="quote-wrapper">
+            <h4 class="quote">"The most handsome man alive"</h4>
+            <h5 class="author">-My grandma</h5>
+            </div>
+            <a href="about.html"><button class="btn-about">About me</button></a>
+        </div>
+
+        <div class="containerright">
+            <img src="images/mypicture-forhtml.png" alt="Ridho Poetra" class="profile-img">
+        </div>
+    </div>
+
+
+    <div class="judulnya">
+        <div class="judulBesar">
+            <h1 class="title">Welcome to My Website!</h1>
+        </div>
+
+        <div class="judulKecil">
+            <p class="paragraph">This is my personal website.</p>
+        </div>
+    </div>
+
+
+
+    <div class="kontainer">
+        <div class="containerkiri">
+            <img src="images/mypicture-forhtml.png" alt="Ridho Poetra" class="profile-img">
+        </div>
+
+        <div class="containerkanan">
+           <h2 class="siapaaku">Who am i?</h2>
+           
+           <p class="kenalin">My name is Ridho.<br>I am a student who loved to learn something.<br>I've learn so many things but master none.</p>
+           
+        </div>
+    </div>
+
+
+    <!-- <div class="perkenalan">
+    <div class="speedrunwaktu">
+        <p>Hi! my name is Ridho</p>
+    </div>
+    <div class="speedrunwaktu2">
+        <p>And</p>
+    </div>
+    <div class="speedrunwaktu2">
+        <p>I'm 17 years old</p>
+    </div>
+    </div> -->
+
+
+    <div class="hati">
+        <img class="gambarhati" src="images/Undertale.png" alt="">
+    </div>
+    <h2 class="Mengapa">I really love learning something new</h2>
+
+
+
+
+    <div class="akubelajarini">
+        <img class="unrealimage" src="images/unreal-engine.jpg" alt="">
+        <img class="blenderimage" src="images/Blender_logo_no_text.svg.png" alt="">
+        <img class="unityimage" src="images/images.png" alt="">
+    </div>
+    <h2 class="gwebelajarini">This is what i'm currently learning</h2>
+
+
+    <!-- <div class="animasigambar">
+    <img src="images/campfireimage (1).png" alt="" style="border-radius: 16px;" id="gambar">
+    </div>
+    <div class="ignoretext">
+    <h2>Ignore the image above, im just testing some animation</h2>
+    </div> -->
+
+
+    <footer>
+        <p class="kakikaki" style="text-align: center; color: rgb(38, 38, 38); margin-top: 50px; font-family: Space mono, monospace;">&copy; footer 2025 hehe</p>
+    </footer>
+</body>
+</html>

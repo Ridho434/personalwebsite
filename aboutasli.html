@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Press Start 2P", Space Mono, monospace;
+            margin-left: 150px;
+            margin-right: 150px;
+            background-color: white;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        ul li a {
+            display: block;
+            color: rgb(38, 38, 38);
+            text-align: center;
+            padding-left: 18px;
+            padding-right: 18px;
+            text-decoration: none;
+            font-family: monospace;
+            font-size: 20px;
+        }
+
+        ul li a:hover {
+            color: rgb(47, 193, 255);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            width: auto;
+        }
+
+        .spesial h1 a {
+            font-family: 'press start 2p';
+            font-size: 35px;
+            color: rgb(38, 38, 38);
+            margin: 0;
+            padding: 14px;
+            text-decoration: none;
+        }
+
+        .about-me {
+            font-size: 30px;
+            padding: 14px;
+            color: rgb(38, 38, 38);
+            margin-top: 50px;
+            font-weight: bold;
+        }
+
+        .tell-name {
+            font-size: 24px;
+            padding-left: 14px;
+            color: rgb(38, 38, 38);
+        }
+
+        .age-love, .learn-a-lot {
+            font-size: 20px;
+            padding-left: 14px;
+            color: rgb(38, 38, 38);
+        }
+
+        .my-tools {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .blender {
+            width: 200px;
+            height: auto;
+            margin: 20px;
+        }
+
+        .unity {
+            width: 219px;
+            height: auto;
+            margin: 20px;
+        }
+
+        .unreal {
+            width: 90px;
+            height: auto;
+            margin: 20px;
+        }
+
+        .git {
+            width: 150px;
+            height: auto;
+            margin: 20px;
+        }
+
+        .vscode {
+            width: 110px;
+            height: auto;
+            margin: 20px;
+        }
+
+        .note-havent-use {
+            font-size: 14px;
+            text-align: center;
+            color: rgb(38, 38, 38);
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        footer {
+            margin-top: 50px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 992px) {
+            body {
+                margin-left: 60px;
+                margin-right: 60px;
+            }
+
+            ul li a {
+                font-size: 18px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+        }
+
+        @media (max-width: 768px) {
+            body {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+            .navbar {
+                flex-direction: column;
+            }
+
+            ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            ul li a {
+                padding: 10px;
+            }
+
+            .about-me {
+                font-size: 24px;
+            }
+
+            .tell-name {
+                font-size: 20px;
+            }
+
+            .age-love, .learn-a-lot {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            .blender, .unity, .git, .vscode {
+                width: 120px;
+            }
+
+            .unreal {
+                width: 70px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="spesial">
+            <h1><a href="index.html">MyWebsite</a></h1>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section 1 -->
+    <h1 class="about-me">About me</h1>
+    <h2 class="tell-name">Hi, as you know my name is Ridho</h2>
+    <h3 class="age-love">I'm 17-year-old student who loves learning new things</h3>
+    <h3 class="learn-a-lot">I learn a lot, but i master nothing... yet.</h3>
+
+    <!-- Section 2 -->
+    <h1 class="about-me">What i do:</h1>
+    <h2 class="tell-name">I do nothing actually.</h2>
+
+    <!-- Section 3 -->
+    <h1 class="about-me">Tools i used daily:</h1>
+    <div class="my-tools">
+        <img class="blender" src="images/Blender_logo_no_text.svg.png" alt="">
+        <img class="unity" src="images/images.png" alt="">
+        <img class="unreal" src="images/unreal-engine.jpg" alt="">
+        <img class="git" src="images/gitlogo.png" alt="">
+        <img class="vscode" src="images/vscode.png" alt="">
+    </div>
+    <p class="note-havent-use">*(sorry i haven't learned how to resize before.)</p>
+
+    <!-- FOOTER -->
+    <footer>
+        <p class="kakikaki" style="text-align:center; color:rgb(38,38,38); font-family:Space Mono, monospace;">
+            &copy;2025 copyright
+        </p>
+    </footer>
+</body>
+</html>

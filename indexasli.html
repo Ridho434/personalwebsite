@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ridho's</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <style>
+        /* ========================
+           ANIMATIONS
+        ======================== */
+        @keyframes myanimasion {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes besarkecil {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes cenatcenut {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        /* Selection highlight */
+        ::selection {
+            background-color: rgb(47, 193, 255);
+            color: rgb(38, 38, 38);
+        }
+
+        /* ========================
+           GLOBAL STYLES
+        ======================== */
+        body {
+            font-family: "Press Start 2P", Space Mono, monospace;
+            margin-left: 150px;
+            margin-right: 150px;
+            background-color: white;
+            -ms-overflow-style: none;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
+
+        html{
+            scrollbar-width: none;
+        }
+
+        .title {
+            color: rgb(38, 38, 38);
+            text-align: center;
+            letter-spacing: 2px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .paragraph {
+            display: flex;
+            font-size: 16px;
+            font-family: Space Mono, monospace;
+            letter-spacing: 2px;
+            color: rgb(38, 38, 38);
+        }
+
+        .judulnya {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 10px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        /* Animated image */
+        #gambar {
+            width: 300px;
+            display: block;
+            margin: auto;
+            height: auto;
+            animation: myanimasion 1s linear infinite;
+        }
+
+        .ignoretext {
+            text-align: center;
+            font-size: 14px;
+            color: rgb(38, 38, 38);
+            margin-top: 120px;
+            margin-bottom: 120px;
+        }
+
+        /* Logo Heart */
+        .hati {
+            display: flex;
+            justify-content: center;
+            margin: 70px 0 50px 0;
+        }
+
+        .gambarhati {
+            width: 150px;
+            animation: cenatcenut .8s linear infinite;
+        }
+
+        .gambarhati:hover {
+            animation: cenatcenut .4s linear infinite;
+            cursor: pointer;
+        }
+
+        .Mengapa {
+            text-align: center;
+            font-size: 18px;
+            margin: 30px 0 120px 0;
+            color: rgb(38, 38, 38);
+        }
+
+        /* Learning images */
+        .akubelajarini {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 70px;
+            margin-bottom: 50px;
+        }
+
+        .unrealimage, .blenderimage, .unityimage {
+            width: 150px;
+            height: auto;
+            margin: 20px;
+        }
+
+        .blenderimage {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .gwebelajarini {
+            text-align: center;
+            font-size: 18px;
+            color: rgb(38, 38, 38);
+        }
+
+        /* ========================
+           NAVBAR
+        ======================== */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li a {
+            
+            padding-left: 18px;
+            padding-right: 18px;
+            font-size: 20px;
+            text-decoration: none;
+            color: rgb(38, 38, 38);
+            font-family: monospace;
+        }
+
+        ul li a:hover {
+            color: rgb(47, 193, 255);
+        }
+
+        .spesial h1 a {
+            font-size: 35px;
+            padding: 14px;
+            color: rgb(38, 38, 38);
+            text-decoration: none;
+        }
+
+        /* ========================
+           HERO SECTION
+        ======================== */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 50px;
+            background-color: black;
+            border-radius: 12px;
+            align-items: center;
+        }
+
+        .containerleft {
+            flex: 1;
+        }
+
+        .namasaya {
+            font-size: 28px;
+            letter-spacing: 2px;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .quote {
+            font-size: 24px;
+            color: white;
+            margin-bottom: 5px;
+        }
+
+        .author {
+            font-size: 18px;
+            color: white;
+            text-align: right;
+            margin-bottom: 60px;
+        }
+
+        .btn-about {
+            background-color: transparent;
+            color: white;
+            border: 2px solid rgb(47, 193, 255);
+            padding: 10px 30px;
+            font-size: 1.2rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-about-whoami {
+            background-color: transparent;
+            color: white;
+            border: 2px solid rgb(47, 193, 255);
+            padding: 10px 30px;
+            font-size: 1.2rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 20px;
+        }
+
+        .btn-about-whoami-wrapper {
+            text-align: right;
+        }
+
+        .btn-about:hover {
+            background-color: rgb(47, 193, 255);
+        }
+
+        .btn-about-whoami:hover {
+            background-color: rgb(47, 193, 255);
+        }
+
+        .containerright {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .profile-img {
+            max-width: 100%;
+            max-height: 500px;
+            height: auto;
+            filter: contrast(1.1);
+        }
+
+        /* ========================
+           SECOND SECTION
+        ======================== */
+        .kontainer {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 50px;
+            background-color: black;
+            border-radius: 12px;
+            /* margin-top: 50px; */
+        }
+
+        .containerkiri {
+            flex: 1;
+        }
+
+        .containerkanan {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 40px;
+        }
+
+        .siapaaku {
+            font-size: 28px;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .kenalin {
+            font-size: 28px;
+            font-family: Space Mono, monospace;
+            color: white;
+            line-height: 1.4;
+        }
+
+        .thank-to-gpt {
+            font-size: 14px;
+            text-align: center;
+            color: rgb(38, 38, 38);
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        /* ========================
+           FOOTER
+        ======================== */
+        footer {
+            margin-top: 50px;
+        }
+
+        /* ========================
+        RESPONSIVE NAVBAR FIXED
+        ======================== */
+        @media (max-width: 768px) {
+            body {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+            /* Navbar turun ke bawah + center */
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px; /* jarak antara title & menu */
+            }
+
+            /* Menu jadi vertikal */
+            ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px; /* jarak antar menu */
+            }
+
+            ul li a {
+                padding: 12px;
+                font-size: 18px;
+            }
+
+            /* HERO SECTION */
+            .container {
+                flex-direction: column;
+                text-align: center;
+                padding: 25px 20px;
+            }
+
+            .containerleft {
+                margin-bottom: 30px;
+            }
+
+            .btn-about {
+                width: 100%;
+            }
+
+            .containerright {
+                justify-content: center;
+                margin-top: 20px;
+            }
+
+            .profile-img {
+                max-width: 80%;
+                height: auto;
+            }
+
+            /* TITLE */
+            .judulnya {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+                margin-top: 40px;
+            }
+
+            /* WHO AM I SECTION */
+            .kontainer {
+                flex-direction: column;
+                padding: 25px 20px;
+                text-align: center;
+                gap: 30px;
+            }
+
+            .containerkanan {
+                padding-left: 0;
+            }
+
+            .btn-about-whoami-wrapper {
+                text-align: center;
+            }
+
+            .btn-about-whoami {
+                width: 100%;
+            }
+
+            /* LEARNING IMAGES */
+            .akubelajarini {
+                flex-direction: column;
+                margin-top: 40px;
+            }
+
+            .unrealimage,
+            .blenderimage,
+            .unityimage {
+                width: 120px;
+                margin: 15px 0;
+            }
+
+            /* HEART */
+            .gambarhati {
+                width: 120px;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="spesial">
+            <h1><a href="index.html">MyWebsite</a></h1>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- HERO -->
+    <div class="container">
+        <div class="containerleft">
+            <h2 class="namasaya">Ridho Poetra</h2>
+
+            <h4 class="quote">"The most handsome man alive"</h4>
+            <h5 class="author">-My grandma</h5>
+
+            <!-- <a href="about.html"><button class="btn-about">About me</button></a> -->
+        </div>
+
+        <div class="containerright">
+            <img src="images/mypicture-forhtml.png" alt="Ridho Poetra" class="profile-img">
+        </div>
+    </div>
+
+    <!-- TITLE -->
+    <div class="judulnya">
+        <div class="judulBesar">
+            <h1 class="title">Welcome to My Website!</h1>
+        </div>
+
+        <div class="judulKecil">
+            <p class="paragraph">This is my personal website.</p>
+        </div>
+    </div>
+
+    <!-- WHO AM I -->
+    <div class="kontainer">
+        <div class="containerkiri">
+            <img src="images/mypicture-forhtml.png" alt="Ridho Poetra" class="profile-img">
+        </div>
+
+        <div class="containerkanan">
+            <h2 class="siapaaku">Who am I?</h2>
+
+            <p class="kenalin">
+                My name is Ridho.<br>
+                I am a student who loved to learn something.<br>
+                I've learn so many things but master none.
+            </p>
+            <div class="btn-about-whoami-wrapper">
+            <a href="about.html"><button class="btn-about-whoami">About me</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEART -->
+    <div class="hati">
+        <img class="gambarhati" src="images/Undertale.png" alt="">
+    </div>
+
+    <h2 class="Mengapa">I really love learning something new</h2>
+
+    <!-- LEARNING IMAGES -->
+    <div class="akubelajarini">
+        <img class="unrealimage" src="images/unreal-engine.jpg">
+        <img class="blenderimage" src="images/Blender_logo_no_text.svg.png">
+        <img class="unityimage" src="images/images.png">
+    </div>
+
+    <h2 class="gwebelajarini">This is what I'm currently learning</h2>
+    <p class="thank-to-gpt">*(thanks gpt for resizing my image)</p>
+
+    <!-- FOOTER -->
+    <footer>
+        <p class="kakikaki" style="text-align:center; color:rgb(38,38,38); font-family:Space Mono, monospace;">
+            &copy;2025 copyright
+        </p>
+    </footer>
+
+</body>
+</html>

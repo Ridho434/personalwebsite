@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        /* ========================
+           GLOBAL STYLES
+        ======================== */
+        /* * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } */
+
+       body {
+            font-family: "Press Start 2P", Space Mono, monospace;
+            margin-left: 150px;
+            margin-right: 150px;
+            background-color: white;
+            -ms-overflow-style: none;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
+
+        html{
+            scrollbar-width: none;
+        }
+
+        /* .main-content {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            flex: 1;
+        } */
+
+        /* ========================
+           NAVBAR
+        ======================== */
+        ul {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            /* background-color: white; */
+        }
+
+    
+        ul li a {
+            display: block;
+            color: rgb(38, 38, 38);
+            text-align: center;
+           
+            padding-left: 18px;
+            padding-right: 18px;
+            text-decoration: none;
+            font-family: monospace;
+            font-size: 20px;
+        }
+
+        ul li a:hover {
+            color: rgb(47, 193, 255);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            width: auto;
+        }
+
+        .spesial h1 a {
+            font-family: 'press start 2p';
+            font-size: 35px;
+            color: rgb(38, 38, 38);
+            margin: 0;
+            padding: 14px;
+            text-decoration: none;
+        }
+
+        /* ========================
+           PROJECT CONTENT
+        ======================== */
+        /* .project-container {
+            margin: 40px 0;
+        }
+
+        .project-item {
+            margin-bottom: 60px;
+        } */
+
+        .blender-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            max-width: 1000px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .blender-image:hover {
+            transform: translateY(-5px);
+        }   
+
+        .blender-text {
+            font-size: 24px;
+            text-align: center;
+            color: rgb(38, 38, 38);
+            font-weight: normal;
+            margin-top: 20px;
+            padding: 0 20px;
+            word-break: break-word;
+            line-height: 1.5;
+        }
+
+        /* ========================
+           FOOTER
+        ======================== */
+        footer {
+            margin-top: 50px;
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+            background-color: white;
+        }
+
+        .kakikaki {
+            text-align: center;
+            color: rgb(38, 38, 38);
+            font-family: Space Mono, monospace;
+            font-size: 14px;
+        }
+
+        /* ========================
+           RESPONSIVE DESIGN
+        ======================== */
+        
+        /* Tablet */
+        @media (max-width: 1024px) {
+            .navbar {
+                padding: 15px 0;
+            }
+            
+            .spesial h1 a {
+                font-size: 28px;
+            }
+            
+            ul li a {
+                font-size: 18px;
+                padding: 10px 15px;
+            }
+            
+            .blender-text {
+                font-size: 22px;
+            }
+            
+            .project-item {
+                margin-bottom: 50px;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                padding: 15px 0;
+            }
+            
+            .spesial h1 a {
+                font-size: 24px;
+                padding: 10px;
+            }
+            
+            ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+                width: 100%;
+            }
+            
+            ul li a {
+                display: block;
+                width: 100%;
+                text-align: center;
+                padding: 12px;
+                font-size: 16px;
+                border-bottom: 1px solid #eee;
+            }
+            
+            ul li:last-child a {
+                border-bottom: none;
+            }
+            
+            .main-content {
+                padding: 0 15px;
+            }
+            
+            .project-container {
+                margin: 30px 0;
+            }
+            
+            .project-item {
+                margin-bottom: 40px;
+            }
+            
+            .blender-text {
+                font-size: 18px;
+                margin-top: 15px;
+                padding: 0 15px;
+                line-height: 1.4;
+            }
+            
+            .blender-image {
+                border-radius: 8px;
+            }
+        }
+
+        /* Small Mobile */
+        @media (max-width: 480px) {
+            .spesial h1 a {
+                font-size: 20px;
+            }
+            
+            ul li a {
+                font-size: 14px;
+                padding: 10px;
+            }
+            
+            .project-container {
+                margin: 20px 0;
+            }
+            
+            .project-item {
+                margin-bottom: 30px;
+            }
+            
+            .blender-text {
+                font-size: 16px;
+                margin-top: 12px;
+                padding: 0 10px;
+                line-height: 1.3;
+            }
+            
+            .blender-image {
+                border-radius: 6px;
+            }
+            
+            .kakikaki {
+                font-size: 12px;
+            }
+        }
+
+        /* Very Small Mobile */
+        @media (max-width: 360px) {
+            .spesial h1 a {
+                font-size: 18px;
+            }
+            
+            .blender-text {
+                font-size: 14px;
+            }
+            
+            .project-item {
+                margin-bottom: 25px;
+            }
+        }
+
+        /* Landscape orientation for mobile */
+        @media (max-width: 768px) and (orientation: landscape) {
+            .navbar {
+                flex-direction: row;
+                padding: 10px 0;
+            }
+            
+            ul {
+                flex-direction: row;
+                gap: 10px;
+            }
+            
+            ul li a {
+                padding: 8px 12px;
+                font-size: 14px;
+                border-bottom: none;
+            }
+            
+            .blender-text {
+                font-size: 16px;
+            }
+        }
+
+        /* For very wide screens */
+        @media (min-width: 1400px) {
+            .main-content {
+                max-width: 1300px;
+            }
+            
+            .blender-image {
+                max-width: 1100px;
+            }
+        }
+
+        /* For very tall mobile screens */
+        @media (max-height: 600px) and (orientation: portrait) {
+            .navbar {
+                padding: 10px 0;
+            }
+            
+            .project-container {
+                margin: 20px 0;
+            }
+            
+            .project-item {
+                margin-bottom: 30px;
+            }
+        }
+
+        /* Image optimization for high DPI screens */
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            .blender-image {
+                image-rendering: -webkit-optimize-contrast;
+                image-rendering: crisp-edges;
+            }
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                background-color: white;
+                color: black;
+            }
+            
+            .navbar {
+                display: none;
+            }
+            
+            .blender-image {
+                max-width: 80%;
+                box-shadow: none;
+            }
+            
+            footer {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="spesial">
+                <h1><a href="index.html">MyWebsite</a></h1>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Project Content -->
+        <div class="project-container">
+            <div class="project-item">
+                <img class="blender-image" src="images/campfireimage (1).png" alt="Blender Campfire Project">
+                <h3 class="blender-text">This is my first blender project.</h3>
+            </div>
+            
+            <br>
+            <br>
+            
+            <div class="project-item">
+                <img class="blender-image" src="images/projectgame.jpg" alt="Unity Game Project">
+                <h3 class="blender-text">This is my first game (i made it in unity).</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p class="kakikaki">
+            &copy;2025 copyright
+        </p>
+    </footer>
+</body>
+</html>
